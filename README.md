@@ -56,8 +56,10 @@
     - Delete: delete single object
 
 5. SQL
-    - [postgresql tutorial](https://www.postgresqltutorial.com/)
-    - [postgresql with fastapi](https://fastapi.tiangolo.com/tutorial/sql-databases/)
+    - refs:
+        - https://github.com/encode/databases
+        - https://www.postgresqltutorial.com
+        - https://stackoverflow.com/questions/65270624/how-to-connect-to-a-sqlite3-db-file-and-fetch-contents-in-fastapi
 
 
 ## Requirements
