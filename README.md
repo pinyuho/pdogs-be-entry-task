@@ -55,21 +55,14 @@
     - Add: create new object
     - Delete: delete single object
 
-5. JWT
-    - [what is jwt](https://www.akana.com/blog/what-is-jwt)
-    - [jwt with fastapi](https://fastapi.tiangolo.com/tutorial/security/oauth2-jwt/))
-
-6. SQL
+5. SQL
     - [postgresql tutorial](https://www.postgresqltutorial.com/)
     - [postgresql with fastapi](https://fastapi.tiangolo.com/tutorial/sql-databases/)
 
 
 ## Requirements
-1. Sign up/Login
-    - store username and hashed password in db
-    - authenticate user with jwt
-2. Browse posts
-3. Read single post
+1. Browse posts
+2. Read single post
 3. Add post
 4. Edit posts
 5. Delete posts
