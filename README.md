@@ -16,6 +16,19 @@
         ```
         git checkout my-branch-name
         ```
+    After Developing
+    - Add files to staging
+        ```
+        git add .
+        ```
+    - Commit with message
+        ```
+        git commit -m "commit msg"
+        ```
+    - Push to gitlab
+        ```
+        git push --set-upstream origin my-branch-name
+        ```
 
 2. conda env
     - Create a new environment
