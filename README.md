@@ -82,3 +82,18 @@
 4. Edit posts
 5. Delete posts
 6. Comment on posts
+
+### Tech stack
+- `python>=3.8`
+- `fastapi`
+- `postgresql`
+
+## Recommended phase
+1. Design your database schema
+2. Design your API spec
+3. Init your backend project
+4. Implement features
+
+## Deliverables
+- A GitLab project with a runnable schema + runnable backend code
+- A `README.md` document describing how to set up + start your backend service
