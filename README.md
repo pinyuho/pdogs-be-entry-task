@@ -50,15 +50,11 @@
 3. fastapi framework
     - Run app
         ```
-        uvicorn app:app --reload
+        uvicorn blog.main:app --reload
         ```
-    - Call API on postman
+    - Call API 
         ```
-        localhost:8000/hello-world
-        ```
-    - Call API with parameters
-        ```
-        localhost:8000/hello-people?name=pdogs
+        http://127.0.0.1:8000/docs
         ```
     
 4. BREAD api
