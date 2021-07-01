@@ -6,3 +6,4 @@ python-dotenv
 aiosmtplib
 uvicorn
 sqlalchemy
+psycopg2

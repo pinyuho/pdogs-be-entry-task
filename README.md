@@ -1,35 +1,23 @@
-# Our Blog
+# Blog Backend
 
-我們ㄉ部落格(後端小作業)
 
-## You will learn
-1. git
-    - Download project
-        ```
-        git clone https://nas.pdogs.ntu.im:30443/pdogs/pdogs-6/our-blog.git
-        ```
-    - Create a new branch
-        ```
-        git branch my-branch-name
-        ```
-    - Switch to the new branch
-        ```
-        git checkout my-branch-name
-        ```
-    After Developing
-    - Add files to staging
-        ```
-        git add .
-        ```
-    - Commit with message
-        ```
-        git commit -m "commit msg"
-        ```
-    - Push to gitlab
-        ```
-        git push --set-upstream origin my-branch-name
-        ```
+## Features
+1. Browse posts
+2. Read single post
+3. Add post
+4. Edit posts
+5. Delete posts
+6. Comment on posts
+7. Read comments of a post
 
+## Getting started
+To run this project, you'll need to have [Docker](https://docs.docker.com/get-docker/) installed.
+
+1. download project
+   ```
+   git clone https://nas.pdogs.ntu.im:30443/pdogs/pdogs-6/backend-entry-task/entry-task-polly.git
+   ```
+   
 2. conda env
     - Create a new environment
         ```
@@ -43,53 +31,23 @@
         ```
         pip install -r requirements.txt
         ```
-
-3. Postman
-    - Install [postman](https://www.postman.com/downloads/)
-
-3. fastapi framework
-    - Run app
+3. run database service
+   ```
+   docker-compose up 
+   ```
+      
+4. fastapi framework
+    - run app
         ```
-        uvicorn blog.main:app --reload
+        uvicorn main:app --reload
         ```
-    - Call API 
+    - call API 
         ```
         http://127.0.0.1:8000/docs
         ```
-    
-4. BREAD api
-    - Browse: return list of objects
-    - Read: return single object
-    - Edit: edit single object
-    - Add: create new object
-    - Delete: delete single object
-
-5. SQL
-    - refs:
-        - https://github.com/encode/databases
-        - https://www.postgresqltutorial.com
-        - https://stackoverflow.com/questions/65270624/how-to-connect-to-a-sqlite3-db-file-and-fetch-contents-in-fastapi
 
 
-## Requirements
-1. Browse posts
-2. Read single post
-3. Add post
-4. Edit posts
-5. Delete posts
-6. Comment on posts
 
-### Tech stack
-- `python>=3.8`
-- `fastapi`
-- `postgresql`
 
-## Recommended phase
-1. Design your database schema
-2. Design your API spec
-3. Init your backend project
-4. Implement features
 
-## Deliverables
-- A GitLab project with a runnable schema + runnable backend code
-- A `README.md` document describing how to set up + start your backend service
+

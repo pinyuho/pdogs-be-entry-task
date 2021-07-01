@@ -2,7 +2,7 @@ version: "3"
 
 services:
   database:
-    container_name: test_postgresql_database
+    container_name: test_postgres
     image: postgres:latest
     restart: always
     environment:
@@ -10,7 +10,7 @@ services:
       POSTGRES_USER: test_user
       POSTGRES_PASSWORD: test_password
     ports:
-      - 5432:5432
+      - 8080:5432
     volumes:
       # Since postgresql will save data in /var/lib/postgresql/data,
       #   mount a local folder to let pg save data files in it

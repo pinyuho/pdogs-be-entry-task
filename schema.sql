@@ -3,8 +3,7 @@ CREATE TABLE post (
   id          SERIAL          PRIMARY KEY,
   author      VARCHAR         NOT NULL,
   title       VARCHAR         NOT NULL,
-  content     TEXT,
-  is_deleted  BOOLEAN         NOT NULL  DEFAULT false
+  content     TEXT
 );
 
 CREATE TABLE comment (
@@ -13,3 +12,6 @@ CREATE TABLE comment (
   username    VARCHAR         NOT NULL,
   content     TEXT
 );
+
+
+
