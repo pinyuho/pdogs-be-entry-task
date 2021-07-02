@@ -1,4 +1,4 @@
-from sqlalchemy import Column, Integer, String, ForeignKey
+from sqlalchemy import Column, Integer, String, DateTime, ForeignKey
 from sqlalchemy.orm import relationship
 from database import Base
 
@@ -8,14 +8,12 @@ class Post(Base):
     author = Column(String)
     title = Column(String)
     content = Column(String)
-
-    comments = relationship("Comment", back_populates="a_post")
+    time_ = Column(DateTime)
 
 class Comment(Base):
     __tablename__ = "comment"
     id = Column(Integer, primary_key=True, index=True)
-    post_id = Column(Integer, ForeignKey("post.id"))
+    post_id = Column(Integer)
     username = Column(String)
     content = Column(String)
-
-    a_post = relationship("Post", back_populates="comments")
+    time_ = Column(DateTime)

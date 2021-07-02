@@ -8,7 +8,7 @@
 4. Edit posts
 5. Delete posts
 6. Comment on posts
-7. Read comments of a post
+7. Browse comments of a post
 
 ## Getting started
 
