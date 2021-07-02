@@ -11,7 +11,6 @@
 7. Read comments of a post
 
 ## Getting started
-To run this project, you'll need to have [Docker](https://docs.docker.com/get-docker/) installed.
 
 1. download project
    ```
@@ -32,6 +31,8 @@ To run this project, you'll need to have [Docker](https://docs.docker.com/get-do
         pip install -r requirements.txt
         ```
 3. run database service
+   
+   (to run this service, you'll need to have [Docker](https://docs.docker.com/get-docker/) installed.)
    ```
    docker-compose up 
    ```
