@@ -7,7 +7,7 @@ class Post(BaseModel):
     author: str
     content: str
 
+
 class Comment(BaseModel):
     username: str
     content: str
-

@@ -2,11 +2,11 @@ from datetime import datetime
 from typing import List
 
 from fastapi import Depends, status, Response, HTTPException, APIRouter
-from sqlalchemy.orm import Session
 import schemas, models, database
 from database import database
 
 router = APIRouter(tags=["Comment"])
+
 
 @router.post("/post/{post_id}/comment", status_code=status.HTTP_201_CREATED)
 async def add_comment(post_id: int, comment: schemas.Comment):
@@ -16,9 +16,10 @@ async def add_comment(post_id: int, comment: schemas.Comment):
         raise HTTPException(status_code=status.HTTP_404_NOT_FOUND, detail=f"Post {post_id} not found")
 
     query = models.Comment.insert().values(post_id=post_id, username=comment.username, \
-                                        content=comment.content, time_=datetime.now())
+                                           content=comment.content, time_=datetime.now())
     last_record_id = await database.execute(query)
     return {**comment.dict(), "id": last_record_id}
+
 
 @router.get("/post/{post_id}/comment", status_code=status.HTTP_200_OK)
 async def browse_comment(post_id: int):
