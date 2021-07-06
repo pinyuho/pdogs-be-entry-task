@@ -28,7 +28,7 @@ async def add_post(post: schemas.Post):
     query = models.Post.insert().values(title=post.title, author=post.author, \
                                         content=post.content, time_=datetime.now())
     last_record_id = await database.execute(query)
-    return {**post.dict(), "id": last_record_id}
+    return f"Post {last_record_id} added"
 
 
 @router.patch("/post/{post_id}", status_code=status.HTTP_200_OK)

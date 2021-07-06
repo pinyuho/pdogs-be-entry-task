@@ -18,7 +18,7 @@ async def add_comment(post_id: int, comment: schemas.Comment):
     query = models.Comment.insert().values(post_id=post_id, username=comment.username, \
                                            content=comment.content, time_=datetime.now())
     last_record_id = await database.execute(query)
-    return {**comment.dict(), "id": last_record_id}
+    return f"Comment {last_record_id} added"
 
 
 @router.get("/post/{post_id}/comment", status_code=status.HTTP_200_OK)
