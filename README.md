@@ -10,6 +10,11 @@
 2. Conda env
    
    (Open a terminal and run the command lines below.)
+   
+    - Move to the project directory
+      ```
+      cd entry-task-polly
+      ```
     - Create a new environment
         ```
         conda create --name my-blog python=3.8
@@ -31,14 +36,18 @@
    docker-compose up 
    ```
       
-4. fastapi framework
+4. Fastapi framework
 
    (Open another new terminal, and run command line below)
+    - Move to the project directory
+      ```
+      cd entry-task-polly
+      ```
     - Activate environment again
       ```
       conda activate my-blog
       ```
-    - run app
+    - Run app
         ```
         uvicorn main:app --reload
         ```
