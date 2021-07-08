@@ -3,3 +3,6 @@ __pycache__
 db-data
 schema
 venv
+
+.env
+docker-compose.yaml

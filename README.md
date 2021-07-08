@@ -7,14 +7,11 @@
    git clone https://nas.pdogs.ntu.im:30443/pdogs/pdogs-6/backend-entry-task/entry-task-polly.git
    ```
    
-2. Conda env
+2. Environment
    
    (Open a terminal and run the command lines below.)
    
-    - Move to the project directory
-      ```
-      cd entry-task-polly
-      ```
+    - Go to the directory `entry-task-polly`
     - Create a new environment
         ```
         conda create --name my-blog python=3.8
@@ -27,6 +24,13 @@
         ```
         pip install -r requirements.txt
         ```
+    - Copy files
+        ```
+        copy .env.example .env
+        copy docker-compose.yaml.example docker-compose.yaml
+        ``` 
+    - Then modify the environment variables in `.env`and `docker-compose.yaml` if needed.
+
 3. Run database service
    
    - Install [Docker](https://docs.docker.com/get-docker/) 
@@ -39,10 +43,7 @@
 4. Fastapi framework
 
    (Open another new terminal, and run command line below)
-    - Move to the project directory
-      ```
-      cd entry-task-polly
-      ```
+    - Go to the directory `entry-task-polly`
     - Activate environment again
       ```
       conda activate my-blog
